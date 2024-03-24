@@ -1,4 +1,4 @@
-print('hello world')
+import streamlit as st
 
-print('hello')
+st.write('this is fucking annoying')
 
