@@ -6,5 +6,5 @@ st.title('this is a demo fucking annoying')
 
 #test of group work
 
-
+#simulation of a merger conflict
 
