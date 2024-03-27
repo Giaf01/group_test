@@ -1,17 +1,46 @@
+# API Key: AIzaSyCYSlwK_6UxkKN1cavKJh-HvEFj_M01jy4
+
 import streamlit as st
 
-st.write('this is fucking annoying')
+# Google Maps API key (replace with your own key)
+API_KEY = 'AIzaSyCYSlwK_6UxkKN1cavKJh-HvEFj_M01jy4'
 
-st.title('this is a demo fucking annoying')
+# Function to generate HTML code for Google Maps
+def generate_map_html(latitude, longitude):
+    return f"""
+        <iframe
+            width="600"
+            height="450"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key={API_KEY}&q={latitude},{longitude}" allowfullscreen>
+        </iframe>
+    """
 
-#test of group work
-print('hello')
-#simulta__
-#simulation of a merger conflict
+# List of universities (replace with your own data)
+universities = {
+    'Harvard University': (42.3744, -71.1169),
+    'Stanford University': (37.4275, -122.1697),
+    'Massachusetts Institute of Technology (MIT)': (42.3601, -71.0942)
+}
 
-st.write("hello")
+# streamlit app
+def main():
+    st.title('University Locator')
 
-#hellofa
+    # Select university
+    selected_university = st.selectbox('Select a university', list(universities.keys()))
+
+    # Get coordinates of selected university
+    latitude, longitude = universities[selected_university]
+
+    # Generate HTML code for Google Maps
+    map_html = generate_map_html(latitude, longitude)
+
+    # Display Google Maps map
+    st.components.v1.html(map_html, width=700, height=500)
+
+if __name__ == '__main__':
+    main()
 
 
 
