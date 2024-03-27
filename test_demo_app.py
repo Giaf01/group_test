@@ -29,6 +29,8 @@ def main():
 
     st.title('This is a test from Miguel')
 
+    st.write('another fucking test')
+
     # Select university
     selected_university = st.selectbox('Select a university', list(universities.keys()))
 
