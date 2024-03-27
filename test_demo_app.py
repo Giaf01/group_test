@@ -27,6 +27,8 @@ universities = {
 def main():
     st.title('Uniswap Map')
 
+    st.subtitle('This is a test from Miguel')
+
     # Select university
     selected_university = st.selectbox('Select a university', list(universities.keys()))
 
