@@ -25,7 +25,7 @@ universities = {
 
 # streamlit app
 def main():
-    st.title('University Locator')
+    st.title('Uniswap')
 
     # Select university
     selected_university = st.selectbox('Select a university', list(universities.keys()))
