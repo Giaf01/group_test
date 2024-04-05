@@ -2,7 +2,7 @@
 
 import streamlit as st
 
-# Google Maps API key (replace with your own key)
+# Google Maps API key 
 API_KEY = 'AIzaSyCYSlwK_6UxkKN1cavKJh-HvEFj_M01jy4'
 
 # Function to generate HTML code for Google Maps
@@ -16,7 +16,7 @@ def generate_map_html(latitude, longitude):
         </iframe>
     """
 
-# List of universities (replace with your own data)
+# List of universities (replace with our full data)
 universities = {
     'Harvard University': (42.3744, -71.1169),
     'Stanford University': (37.4275, -122.1697),
