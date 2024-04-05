@@ -20,7 +20,8 @@ def generate_map_html(latitude, longitude):
 universities = {
     'Harvard University': (42.3744, -71.1169),
     'Stanford University': (37.4275, -122.1697),
-    'Massachusetts Institute of Technology (MIT)': (42.3601, -71.0942)
+    'Massachusetts Institute of Technology (MIT)': (42.3601, -71.0942),
+    'University of St. Gallen (HSG)': (47.43187, 9.3747)
 }
 
 # streamlit app
